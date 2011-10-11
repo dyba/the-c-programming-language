@@ -1,0 +1,15 @@
+# Vim generated Files #
+#######################
+*.swp
+
+# Compiled source #
+###################
+*.o
+
+# Executable Files #
+####################
+a.out
+ex1-6
+ex1-7
+ex1-8
+line_count
