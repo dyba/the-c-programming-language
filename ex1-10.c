@@ -4,14 +4,18 @@ int main() {
 
   int c;
 
+  char backspace = '\b';
+  char tab       = '\t';
+  char backslash = '\\';
+
   while ((c = getchar()) != EOF) {
   
-    if (c == '\t') {
-      putchar('\\'); putchar('t');
-    } else if (c == '\b') {
-      putchar('\\'); putchar('b');
-    } else if (c == '\\') {
-      putchar('\\'); putchar('\\');
+    if (c == tab) {
+      putchar(backslash); putchar('t');
+    } else if (c == backspace) {
+      putchar(backslash); putchar('b');
+    } else if (c == backslash) {
+      putchar(backslash); putchar(backslash);
     } else
       putchar(c);
   }
