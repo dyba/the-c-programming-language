@@ -9,14 +9,14 @@ int main() {
   char backslash = '\\';
 
   while ((c = getchar()) != EOF) {
-  
-    if (c == tab) {
-      putchar(backslash); putchar('t');
-    } else if (c == backspace) {
-      putchar(backslash); putchar('b');
-    } else if (c == backslash) {
-      putchar(backslash); putchar(backslash);
-    } else
+
+    if (c == tab)
+      printf("%ct", backslash);
+    else if (c == backspace)
+      printf("%cb", backslash);
+    else if (c == backslash)
+      printf("%c%c", backslash, backslash);
+    else
       putchar(c);
   }
 
