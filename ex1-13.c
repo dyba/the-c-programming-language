@@ -90,13 +90,11 @@ main()
     printf("\n");
 
     // Print the tens decimal value
-    for (i = 1; i <= MAX_LENGTH; i++) {
-
+    for (i = 1; i <= MAX_LENGTH; i++)
 	if (i % 10 == 0)
 	    printf("%d", i / 10);
 	else
 	    printf(" ");
-    }
 
     printf("\n");
 }
